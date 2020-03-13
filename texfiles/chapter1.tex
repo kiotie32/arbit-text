@@ -1,0 +1,101 @@
+\chapter{Introduction}
+\label{chap:intro}
+Anomaly detection refers to  identification of rare items,events,observations which are suspicious in their occurrences. Any deviation from normal beavior in a working system is an anomaly. Different kind of anomalies  differ differently. Typically when a system is deviating from its normal behavior then it could be under some kind of attack which might lead to more problems from a security point of view. These challenges have been keeping the researchers hooked on to find anomalous behavior in systems.Once we have established the anomalous behaviour of system then we can apply several algorithms and approaches to detect and study it.That is the purpose of this work.Anomaly Detection
+Anomaly detection is the problem of identifying data points that don't conform to expected (normal) behaviour. Unexpected data points are also known as outliers and exceptions etc. Anomaly detection has crucial significance in the wide variety of domains as it provides critical and actionable information. For example, an anomaly in MRI image scan could be an indication of the malignant tumor or anomalous reading from production plant sensor may indicate faulty component.This thesis studies in detail various kind of anomaly detection techniques and compares them based on their effectiveness. Algorithms have been implemented in Python mostly.
+
+What is Anomaly Detection?
+Anomalies or outliers come in three types.
+Point Anomalies. If an individual data instance can be considered as anomalous with respect to the rest of the data (e.g. purchase with large transaction value)
+Contextual Anomalies, If a data instance is anomalous in a specific context, but not otherwise ( anomaly if occur at a certain time or a certain region. e.g. large spike at the middle of the night)
+Collective Anomalies. If a collection of related data instances is anomalous with respect to the entire dataset, but not individual values. They have two variations. 
+Events in unexpected order ( ordered. e.g. breaking rhythm in ECG)
+Unexpected value combinations ( unordered. e.g. buying a large number of expensive items)
+In the next section, we will discuss in detail how to handle the point and collective anomalies. Contextual anomalies are calculated by focusing on segments of data (e.g. spatial area, graphs, sequences, customer segment) and applying collective anomaly techniques within each segment independently.
+
+When there is no Training Data
+If you do not have training data, still it is possible to do anomaly detection using unsupervised learning and semi-supervised learning. However, after building the model, you will have no idea how well it is doing as you have nothing to test it against. Hence, the results of those methods need to be tested in the field before placing them in the critical path.
+\section{Motivation}
+In today's ever changing and dynamic world where technology keeps changing daily and a new attack surfaces every fortnight  it has become a challenging task for users and administrators of any infrastructure to keep a track of anomalous behaviour of system.Which should be detected at initial level so that it could be predicted before an attack happens. A lot of cloud computing services have emerged in 21st century like Amazon's AWS,Microsoft Azure,Google Cloud Platform,Alibaba Cloud, Huawei Cloud,Oracle Cloud.Not only software developers but organizations,researchers,companies ,enterprises many govt organizations are using  these  on demand computing services.The computational power which can be offered via cloud service provider is much more than a stand alone system or an infrastructure set up by a small individual or organization can offer. But with more power more challenges have propped up in terms of security of these services.
+
+\subsection{First contribution} 
+A detailed investigation and analysis of various attacks  have been carried out for finding the cause of problems associated with various anomalies in detecting intrusive activities. Attack classification and mapping of the attack features is provided corresponding to each attack. Issues which are related to detecting low-frequency attacks using network attack dataset are also discussed and viable methods are suggested for improvement. Anomaly detection techniques have been studied and compared in terms of their detection capability for detecting the various category of attacks.
+\subsection{Second contribution} 
+In anomaly detection the challenge is to identify a virtual machine or server that is running with malicious code. The cloud service provider has to provide just the underlying infrastructure. The customer has the responsibility to maintain the integrity of system running on his virtual machine.
+The challenge is that anomalies in data translate to important actionable information. This is a new area of research which is emerging and it has potential to further develop.
+
+
+\section{Objective of the thesis}
+\label{objective}
+This thesis explores what is anomaly detection, different anomaly detection techniques,  discusses the key idea behind those techniques, and wraps up with a discussion on how to make use of those results.\newline%
+To do anomaly detection following three conditions are needed:-\\
+You have labeled training data
+Anomalous and normal classes are balanced 
+Data should  not  be autocorrelated.  That means one data point does not depend on earlier data points. This often breaks in time series data).
+If all of above is true, we do not need an anomaly detection techniques and we can use an algorithm like Random Forests or Support Vector Machines (SVM).
+However, often it is very hard to find training data, and even when you can find them, most anomalies are 1:1000 to 1:10^6 events where classes are not balanced. Moreover, the most data, such as data from IoT use cases, would be autocorrelated.
+To effectively classify and predict the anomalies in system.
+\begin{itemize}
+     \textendash\textbf{i} To be able to understand the anomaly detection techniques by existing service providers.
+     \textendash\textbf{ii} To be able to implement an approach which can detect anomalies in a given data set.\\
+\end{itemize}
+
+%
+
+%
+%\textbf{iii) Write objective of the third contribution as chapter
+%
+%\textbf{iv) Write objective of the fourth contribution as chapter
+%
+%Write general comments
+
+\section{Contribution of the thesis}
+In the current work we have tried to implement a clustering technique which analyzes the  data set and try to find out anomaly in the given data set.
+
+
+\emph{In summary, the areas of contribution of this thesis are anomaly detection in cloud environment.}
+
+\section{Organization of the thesis}
+The rest of the thesis is organized as follows.\newline
+In \textbf{Chapter~\ref{chap:chapter2}}, We reviewed literature for intrusion detection and various techniques which are used in anomaly detection.\\
+In \textbf{Chapter~\ref{chap:chapter3}}, In Chapter three we review the existing security practises by existing cloud computing vendors. We explored their implementation for anomaly detection.\\
+In \textbf{Chapter~\ref{chap:chapter4}}, In this Chapter we have described the approach used to detect anomalies in given data set.\\
+Finally, we conclude in \textbf{Chapter~\ref{chap:conclusion}}.\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
